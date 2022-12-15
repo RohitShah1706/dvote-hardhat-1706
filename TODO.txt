@@ -1,0 +1,16 @@
+ELECTION - CONSTRUCTOR SHOULD TAKE AUTHORITY DETAILS AND PUSH TO AUTHORITY ARRAY 
+createElection - AUTHORITY ARRAY CONTAINS AUTHORITY_ADDRESS THEN ALLOW AUTHORITY TO createElection - PUSH THIS ELECTION TO ELECTION ARRAY
+startElection - ONLY THE MSG.SENDER == AUTHORITY_ADDRESS ELSE THROW ERROR
+
+CREATE VOTER, VOTER ARRAY,
+
+OTHER FUNCTIONS
+RETURN NO. OF ELECTIONS HAPPENING
+
+
+FRONTEND - 
+AUTHORITY only can add the candidate
+VOTERS can register themselves at which point they will be pushed to pendingvoters array in contract
+THEN AUTHORITY can go on frontend and verify voters on by one. REJECTED voters will be removed from pendingVoters array
+
+NOTE - CANDIDATE ID STARTS FROM 1 AND NOT ZERO
